@@ -9,7 +9,7 @@ app.use("/api", jsonRouter);
 
 const server = async () => {
   try {
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT, () => {
       console.log(`Server running. Use API on port: ${process.env.PORT}`);
     })
   } catch (e) {
